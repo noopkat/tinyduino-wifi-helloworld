@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/noopkat/tinyduino-wifi-helloworld",
   "dependencies": {
-    "hapi": "^6.10.0"
+    "hapi": "^6.10.0",
+    "twilio": "^1.7.0"
   }
 }
