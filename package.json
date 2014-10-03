@@ -1,0 +1,27 @@
+{
+  "name": "tinyduino-wifi-helloworld",
+  "version": "1.0.0",
+  "description": "example of an IoT implementation of a light sensor + wifi",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noopkat/tinyduino-wifi-helloworld.git"
+  },
+  "keywords": [
+    "IoT",
+    "photocell",
+    "NDC"
+  ],
+  "author": "Suz Hinton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noopkat/tinyduino-wifi-helloworld/issues"
+  },
+  "homepage": "https://github.com/noopkat/tinyduino-wifi-helloworld",
+  "dependencies": {
+    "hapi": "^6.10.0"
+  }
+}
