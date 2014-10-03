@@ -29,7 +29,7 @@ Adafruit_CC3000 cc3000 = Adafruit_CC3000(ADAFRUIT_CC3000_CS, ADAFRUIT_CC3000_IRQ
 // Local server IP, port, and repository (change with your settings !)
 uint32_t ip = cc3000.IP2U32(172,0,0,1);
 int port = 80;
-String repository = "/";
+String path = "/mailbox/token/";
 
 // vars
 int sensorPin = 0;
@@ -61,7 +61,7 @@ void setup(void)
   
   // this is the api call to your software running anywhere
   // token is just a little verification to prevent terrible friends just hitting your service to troll you with false positives
-  String request = "POST " + repository + "?token=" + token + " HTTP/1.0";
+  String request = "POST " + path + token + " HTTP/1.0";
 
 }
 
