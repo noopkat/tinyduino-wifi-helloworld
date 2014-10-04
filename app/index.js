@@ -6,10 +6,10 @@ var mailgunOpts = {
   url: '',
   pass: '',
   formData: {
-    from: mailgunOpts.from,
-    to: mailgunOpts.to,
-    subject: mailgunOpts.subject,
-    text: mailgunOpts.text
+    from: '',
+    to: '',
+    subject: '',
+    text: ''
   }
 };
 
