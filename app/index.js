@@ -8,8 +8,8 @@ var mailgunOpts = {
   formData: {
     from: '',
     to: '',
-    subject: '',
-    text: ''
+    subject: 'you have mail!',
+    text: 'go check your mailbox, champ.'
   }
 };
 
