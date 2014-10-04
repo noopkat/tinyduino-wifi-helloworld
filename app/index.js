@@ -1,20 +1,31 @@
 var Hapi = require('hapi');
 var request = require('request');
 
-// set up twilio credentials here
-var twilioSid = '',
-    twilioToken = '',
-    twilioNums = { from: '', to: '' },
-var Twilio = require('twilio')(twilioSid, twilioToken);
-
 // set up Mailgun credentials here
-var mailgunURL = '';
-var mailgunPass = '';
+var mailgunOpts = {
+  url: '',
+  pass: '',
+  formData: {
+    from: mailgunOpts.from,
+    to: mailgunOpts.to,
+    subject: mailgunOpts.subject,
+    text: mailgunOpts.text
+  }
+};
+
+// set up Twilio credentials here
+var twilioOpts = {
+  sid: '',
+  token: '',
+  from: '', 
+  to: '' 
+};
+var Twilio = require('twilio')(twilioOpts.sid, twilioOpts.token);
 
 // fill this in with the token your tinyduino will send as part of the request
 var passToken = '558822';
 
-var server = new Hapi.Server('localhost', 8081);
+var server = new Hapi.Server('10.0.1.4', 8081);
 
 server.route({
     method: 'GET',
@@ -31,7 +42,6 @@ server.route({
       if (request.params.token && request.params.token === passToken) {
         // Twilio
         sendSMS();
-
         // MailGun
         sendEmail();
 
@@ -58,21 +68,14 @@ function sendSMS() {
 }
 
 function sendEmail() {
-  var formData = {
-    from: 'Mailbox Monitor <someone@email.com>',
-    to: 'Me <me@email.com>',
-    subject: 'you have mail!',
-    text: 'go check your mailbox, champ.'
-  };
-
   // mailgun API call
   request.post({
-    url : mailgunURL,
+    url : mailgunOpts.url,
     auth: {
       user: 'api',
-      password: mailgunPass,
+      password: mailgunOpts.pass,
     },
-    form: formData
+    form: mailgunOpts.formData
     
   }, function(err, mailgunRes) {
     if (err) {
