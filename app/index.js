@@ -57,8 +57,8 @@ function sendSMS() {
   // twilio api
   Twilio.messages.create({
       body: 'you have mail!',
-      to: twilioNums.to,
-      from: twilioNums.from
+      to: twilioOpts.to,
+      from: twilioOpts.from
   }, function(err, message) {
       if (err) {
         process.stdout.write('twilio failed: ' + err);
