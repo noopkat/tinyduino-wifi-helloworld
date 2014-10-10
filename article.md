@@ -17,19 +17,19 @@ The full code is hosted on Github: https://github.com/noopkat/tinyduino-wifi-hel
 ![knoll of parts](http://f.cl.ly/items/0U381w2C3u0u1W3R2x2G/mailbox-device-knoll.jpg)
 
 ## Shopping list
-  • TinyCircuits Processor board
-  • TinyCircuits WiFi module
-  • TinyCurcuits Proto module (any will do)
-  • TinyCircuits USB programmer module (not pictured)
-  • micro USB cable
-  • 10k Ohm resistor
-  • photocell resistor
-  • 3.7v LiPo battery, at least 500mA
+  + TinyCircuits Processor board
+  + TinyCircuits WiFi module
+  + TinyCurcuits Proto module (any will do)
+  + TinyCircuits USB programmer module (not pictured)
+  + micro USB cable
+  + 10k Ohm resistor
+  + photocell resistor
+  + 3.7v LiPo battery, at least 500mA
   
 **Tools I assume you have already:**
-  • LiPo charger
-  • soldering iron
-  • solder
+  + LiPo charger
+  + soldering iron
+  + solder
 
 ## Assembly
 My favourite feature of the TinyCircuits system (other than the tiny size) is the way they easily click together to supply the technology you need.
@@ -88,7 +88,7 @@ When the request is successful, the route handler will call some third party API
 
 A truncated sample of the code:
 
-```
+```javascript
 var Hapi  = require('hapi');
 var server = new Hapi.Server('10.0.1.4', 8081);
 var passToken = '558822';
