@@ -17,19 +17,20 @@ The full code is hosted on Github: https://github.com/noopkat/tinyduino-wifi-hel
 ![knoll of parts](http://f.cl.ly/items/0U381w2C3u0u1W3R2x2G/mailbox-device-knoll.jpg)
 
 ## Shopping list
-  + TinyCircuits Processor board
-  + TinyCircuits WiFi module
-  + TinyCurcuits Proto module (any will do)
-  + TinyCircuits USB programmer module (not pictured)
-  + micro USB cable
-  + 10k Ohm resistor
-  + photocell resistor
-  + 3.7v LiPo battery, at least 500mA
-  
-**Tools I assume you have already:**
-  + LiPo charger
-  + soldering iron
-  + solder
++ [TinyCircuits Processor board](https://tiny-circuits.com/tinyduino-processor-board.html)
++ [TinyCircuits Wifi module](https://tiny-circuits.com/tiny-shield-wifi.html)
++ [TinyCurcuits Proto module](https://tiny-circuits.com/tiny-shield-proto-board-2.html) (any will do)
++ [TinyCircuits USB programmer module](https://tiny-circuits.com/tiny-shield-usb-and-icp.html) (not pictured)
++ micro USB cable
++ 10k Ohm resistor
++ [photocell resistor](http://www.adafruit.com/products/161)
++ [3.7v LiPo battery](http://www.adafruit.com/products/1578), at least 500mA 
+
+Tools I assume you have already:
++ [LiPo charger](http://www.adafruit.com/products/1304)
++ soldering iron
++ solder
++ good eyes (my eyes are terrible for close-up work like soldering, but I still manage okay)
 
 ## Assembly
 My favourite feature of the TinyCircuits system (other than the tiny size) is the way they easily click together to supply the technology you need.
