@@ -37,11 +37,13 @@ First, we're going to click everything together as we need it.
 
 Take the processor board, and click the USB module to the top of it. Then, click the WiFi module to the top of the USB one. Lastly, click together the proto board to the very top of the stack. This will be the order of the stack when we develop it. It allows us to power the board without a battery via the computer, and we can also program it this way.
 
-Next, remove the proto module from the top of the stack. Solder the resistor and photocell to it. The resistor goes from A0 to GND, and the photocell shares the A0, and the other end goes to VBATT. VBATT is a special pin that makes both the USB and battery power sources available to use.
+Next, remove the proto module from the top of the stack. Solder the resistor and photocell to it. The resistor goes from A0 to GND, and the photocell shares the A0, and the other end goes to VBATT. VBATT is a special pin that makes both the USB and battery power sources available to use. See the breadboard fritzing diagram below to assist you:
+
+![photo of stack](http://f.cl.ly/items/1p3O0g3l021W1K410H2y/soldered-mailbox-device.jpg)
 
 See the following example for how it will look when complete. Note I have left the component arms rather long so that it's easier to see what's going on.
 
-![photo of stack](http://f.cl.ly/items/1p3O0g3l021W1K410H2y/soldered-mailbox-device.jpg)
+![fritzing breadboard](https://github.com/noopkat/tinyduino-wifi-helloworld/blob/master/fritzing/photocell-to-arduino.png)
 
 ## Upload Arduino code
 Click the proto module back onto your TinyCircuit stack. Plug a micro USB cable into the programming board, then connect to your computer. In the Arduino software, set the board to 'Arduino Pro Mini 3.3v w/ ATMega 328'. Open the sketch from the repo and click 'upload'. Select the correct USB device if prompted.
