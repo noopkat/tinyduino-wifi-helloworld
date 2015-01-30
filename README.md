@@ -41,8 +41,5 @@ Tools I assume you have already:
 + good eyes (my eyes are terrible for close-up work like soldering, but I still manage okay)
 
 ## Assembly
-(todo)
-
-## Upload sketch, set up server
-(todo)
+[Read this, taken from my article in NDC Magazine](https://github.com/noopkat/tinyduino-wifi-helloworld/blob/master/article.md)
 
